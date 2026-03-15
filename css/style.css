@@ -732,3 +732,67 @@ img { max-width: 100%; display: block; }
 .fade-in-delay-3 { transition-delay: 0.3s; }
 .fade-in-delay-4 { transition-delay: 0.4s; }
 .fade-in-delay-5 { transition-delay: 0.5s; }
+
+
+
+
+
+
+
+
+
+
+/* =============================================
+   RON PAGE HERO — UPLOAD CTA OVERRIDE
+   ============================================= */
+.page-hero--ron {
+  min-height: 420px;
+}
+
+.page-hero--ron .page-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.ron-upload-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 4vw, 48px);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.25;
+  max-width: 720px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.ron-upload-btn {
+  background: var(--gold);
+  color: var(--text-dark);
+  border-color: var(--gold);
+  font-size: 16px;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-weight: 700;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+}
+
+.ron-upload-btn:hover {
+  background: transparent;
+  color: var(--gold);
+  border-color: var(--gold);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-hero--ron { min-height: 300px; }
+  .ron-upload-title { font-size: clamp(20px, 5vw, 30px); }
+  .ron-upload-btn { font-size: 14px; padding: 14px 28px; }
+}
+
+@media (max-width: 480px) {
+  .ron-upload-title { font-size: 20px; }
+  .page-hero--ron .page-hero-content { align-items: center; text-align: center; }
+}
